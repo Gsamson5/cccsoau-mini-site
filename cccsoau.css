@@ -1,0 +1,631 @@
+@-webkit-keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+  80% {
+    tranform: translateX(4rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0rem);
+  }
+}
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+  80% {
+    tranform: translateX(4rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0rem);
+  }
+}
+@-webkit-keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+  80% {
+    transform: translateX(4rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0rem);
+  }
+}
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+  80% {
+    transform: translateX(4rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0rem);
+  }
+}
+@-webkit-keyframes rotateAbout {
+  0% {
+    opacity: 0;
+    transform: translateY(10rem);
+  }
+  90% {
+    transform: skewX(45deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0rem);
+  }
+}
+@keyframes rotateAbout {
+  0% {
+    opacity: 0;
+    transform: translateY(10rem);
+  }
+  90% {
+    transform: skewX(45deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0rem);
+  }
+}
+@-webkit-keyframes reAppear {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+  80% {
+    transform: translateX(4rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0rem);
+  }
+}
+@keyframes reAppear {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+  80% {
+    transform: translateX(4rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0rem);
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 80%;
+}
+
+body {
+  font-family: Tahoma, sans-serif;
+  font-weight: 45rem;
+  padding: 1.5rem;
+  height: 1.5;
+  color: white;
+}
+
+.header {
+  height: 95vh;
+  background-image: linear-gradient(to right bottom, rgba(58, 6, 153, 0.8), rgba(10, 3, 48, 0.8)), url("file:///C:/Users/SPECIFIC%20TOOLS/Documents/html/images/cccsoau.jpg");
+  background-position: top;
+  background-size: cover;
+  position: relative;
+  -webkit-clip-path: polygon(0 0, 98% 0, 100% 100%, 0 98%);
+          clip-path: polygon(0 0, 98% 0, 100% 100%, 0 98%);
+}
+.header_logo {
+  display: inline-block;
+  padding-left: 1rem;
+  padding-top: 1rem;
+}
+.header_logo-cccsoau {
+  height: 2.5rem;
+}
+.header_logo-oau {
+  height: 2.5rem;
+}
+.header_link {
+  list-style: square;
+  text-decoration: none;
+  display: flex;
+  background-color: white;
+}
+
+ul {
+  display: inline-block;
+  justify-content: space-around;
+  text-transform: uppercase;
+  color: rgb(138, 43, 226);
+  margin-top: 0.5rem;
+  font-weight: 600;
+}
+
+#form {
+  position: absolute;
+  margin-top: 1.5rem;
+  padding: 1rem;
+}
+
+#username {
+  margin-bottom: 1rem;
+  border: 0.2rem solid rgb(4, 1, 29);
+  padding: 0.3rem;
+}
+
+#password {
+  margin-bottom: 1rem;
+  border: 0.2rem solid rgb(4, 1, 29);
+  padding: 0.3rem;
+}
+
+.butt {
+  color: white;
+  border: 0.2rem solid rgb(4, 1, 29);
+  background-color: blue;
+  padding: 0.3rem;
+  margin-bottom: 1rem;
+}
+.butt:hover {
+  height: 4rem;
+  width: 6rem;
+  background-color: rgb(138, 43, 226);
+  color: red;
+  font-weight: 600;
+}
+.butt_acc {
+  color: blue;
+  border: 0.2rem solid white;
+}
+.butt-about {
+  background-color: rgba(10, 3, 48, 0.8);
+  color: white;
+  text-decoration: none;
+  border-bottom: 0.2rem solid rgb(138, 43, 226);
+  letter-spacing: 0.2rem;
+}
+
+.main {
+  text-align: center;
+}
+.main .main_1 {
+  position: absolute;
+  left: 40%;
+  top: 50%;
+  text-align: center;
+  text-transform: uppercase;
+}
+.main_minor-1 {
+  display: block;
+  letter-spacing: 2.8rem;
+  -webkit-animation-name: moveInLeft;
+          animation-name: moveInLeft;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+}
+.main_minor-2 {
+  display: block;
+  font-weight: 350;
+  letter-spacing: 0.8rem;
+  -webkit-animation-name: moveInRight;
+          animation-name: moveInRight;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+}
+
+.button {
+  display: block;
+  font-weight: 400;
+  letter-spacing: 0.8rem;
+  position: absolute;
+  left: 46%;
+  top: 70%;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  background-color: blue;
+  padding: 0.5rem;
+  border: 0.2rem solid white;
+  border-radius: 1rem;
+  text-decoration: none;
+  -webkit-animation-name: rotateAbout;
+          animation-name: rotateAbout;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+.button:hover {
+  font-weight: 500;
+  letter-spacing: 0.5rem;
+  color: white;
+  box-shadow: 0rem 0.5rem 1rem rgb(4, 1, 29);
+  background-color: blue;
+  padding: 0.5rem;
+  border: 0.7rem solid white;
+  border-radius: 1rem;
+  text-decoration: none;
+  width: 20rem;
+}
+
+.slogan {
+  font-weight: 100;
+  position: absolute;
+  left: 71%;
+  top: 93%;
+  text-align: center;
+  -webkit-animation-name: reAppear;
+          animation-name: reAppear;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-iteration-count: 5;
+          animation-iteration-count: 5;
+  -webkit-animation-direction: left;
+          animation-direction: left;
+}
+
+.row {
+  max-width: 114rem;
+  margin: 0 auto;
+}
+.row:not(:last-child) {
+  margin-bottom: 8rem;
+}
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.row .col-1-of-2 {
+  width: calc((100% - 6rem) / 2);
+  float: left;
+}
+.row .col-1-of-2:not(:last-child) {
+  margin-right: 6rem;
+}
+.row .col-1-of-4 {
+  width: calc((100% - 3*6rem) / 4);
+  float: left;
+}
+.row .col-1-of-4:not(:last-child) {
+  margin-right: 6rem;
+}
+
+.about-us {
+  margin-top: -3vh;
+  color: black;
+  background-color: #f7f7f7;
+  padding-bottom: 12rem;
+}
+
+.u-center {
+  text-align: center;
+}
+
+.h2 {
+  margin: 5rem 0;
+  font-weight: 700;
+  background-image: linear-gradient(to right bottom, rgba(58, 6, 153, 0.8), rgba(10, 3, 48, 0.8));
+  text-transform: uppercase;
+  display: inline-block;
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 0.2rem;
+  transition: all 0.2s;
+}
+.h2:hover {
+  transform: skewY(2deg) skewY(10deg) scale(1.1);
+  text-shadow: 0.5rem 0.1rem 0.2rem rgba(0, 0, 0, 0.2);
+}
+
+.h3 {
+  margin-bottom: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: rgb(4, 1, 29);
+}
+.h3:not(:first-child) {
+  margin-top: 2rem;
+}
+
+[class^=col-] p:not(:first-child) {
+  margin-bottom: 2rem;
+}
+
+.composition {
+  position: relative;
+}
+.composition_photo {
+  width: 48%;
+  position: absolute;
+  z-index: 10;
+  transition: all 0.2s;
+  outline-offset: 0.8rem;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+}
+.composition_photo-1 {
+  left: 45%;
+  top: 9rem;
+}
+.composition_photo-2 {
+  left: 0;
+  top: -2rem;
+}
+.composition_photo-3 {
+  left: 45%;
+  top: -2rem;
+}
+.composition_photo:hover {
+  outline: 1rem solid rgba(10, 3, 48, 0.8);
+  transform: scale(1) translateY(-0.5rem);
+  box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+  z-index: 15;
+}
+.composition:hover .composition_photo:not(:hover) {
+  transform: scale(0.95);
+}
+
+.feature-section {
+  background-image: linear-gradient(to right bottom, rgba(58, 6, 153, 0.8), rgba(10, 3, 48, 0.8)), url("file:///C:/Users/SPECIFIC%20TOOLS/Documents/html/images/cccsoau%20(3).jpg");
+  padding: 10rem 0;
+  background-size: cover;
+  margin-top: -4.5rem;
+  transform: skewY(-5deg);
+}
+.feature-section > * {
+  transform: skewY(5deg);
+}
+
+.feature-box {
+  background-color: white;
+  border: 0.1rem solid black;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+  padding: 2.5rem;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.25);
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.feature-icon {
+  font-size: 4rem;
+  margin-bottom: 0.4rem;
+  display: inline-block;
+  background-image: linear-gradient(to right bottom, rgba(58, 6, 153, 0.8), rgba(10, 3, 48, 0.8));
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.feature-box:hover {
+  transform: translateY(-1.5rem) scale(1.03);
+}
+
+.feature-text {
+  color: rgb(4, 1, 29);
+  margin: 2rem 0;
+}
+
+.footer {
+  background-color: rgb(9, 3, 15);
+  padding-top: 10rem;
+  margin-top: -5rem;
+}
+
+.footer-logo {
+  width: 3rem;
+  height: 3rem;
+  margin: 0 auto;
+  border-radius: 50%;
+  background-color: white;
+  margin-bottom: 5rem;
+}
+
+.logo-footer {
+  width: 2.9rem;
+  height: auto;
+  margin: 0 auto;
+}
+
+.footer-list {
+  list-style-type: none;
+  display: inline-block;
+  border-top: 2px solid white;
+  padding-left: 5rem;
+  padding-top: 3rem;
+}
+
+.footer-item {
+  display: inline-block;
+  transition: all 0.3s;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: white;
+  margin-right: 3rem;
+}
+
+.footer-item:hover {
+  transform: skewY(10deg) scale(1.03);
+  text-shadow: 0 1.5rem 4rem black;
+}
+
+.footer-link:hover {
+  color: blue;
+}
+
+.footer-text {
+  color: white;
+  border-top: 2px solid white;
+  padding-left: 5rem;
+  padding-top: 3rem;
+}
+
+.footer-text-2 {
+  color: white;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+.footer-text-2:hover {
+  transform: skewY(5deg);
+  text-shadow: 0 1.5rem 4rem black;
+}
+
+.foot-lnk {
+  text-decoration: none;
+}
+
+.nav-checkbox {
+  display: none;
+}
+
+.nav-label {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  position: fixed;
+  top: 3.5rem;
+  right: 4rem;
+  z-index: 2000;
+  background-color: white;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+  text-align: center;
+  cursor: pointer;
+}
+
+.nav-bg {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  position: fixed;
+  top: 4rem;
+  right: 4rem;
+  background-image: radial-gradient(#3a0699, #0a0330);
+  z-index: 500;
+  transition: transform 0.5s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.nav-page {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  opacity: 0;
+  width: 0;
+  transition: all 0.8s;
+}
+
+.nav-item {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  list-style-type: none;
+  transform: translate(-50%, -50%);
+}
+
+.nav-list {
+  margin: 1rem;
+}
+
+.nav-link:link, .nav-link:visited {
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: 300;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, white 50%);
+  background-size: 250%;
+  transition: all 0.4s;
+}
+.nav-link:hover, .nav-link:active {
+  background-position: 100%;
+  color: rgba(58, 6, 153, 0.8);
+  transform: translateX(1rem);
+}
+.nav-link span {
+  display: inline-block;
+  margin-right: 1.5rem;
+}
+
+.nav-checkbox:checked ~ .nav-bg {
+  transform: scale(80);
+}
+
+.nav-checkbox:checked ~ .nav-page {
+  opacity: 1;
+  width: 100%;
+}
+
+.nav-icon {
+  position: relative;
+  margin-top: 2rem;
+}
+.nav-icon, .nav-icon::before, .nav-icon::after {
+  width: 2rem;
+  height: 2px;
+  display: inline-block;
+  background-color: #333;
+  transition: all 0.2s;
+}
+.nav-icon::before, .nav-icon::after {
+  content: "";
+}
+.nav-icon::before {
+  position: absolute;
+  left: 0;
+  top: -0.5rem;
+}
+.nav-icon::after {
+  position: absolute;
+  left: 0;
+  top: 0.5rem;
+}
+
+.nav-label:hover .nav-icon::before {
+  top: -0.7rem;
+}
+
+.nav-label:hover .nav-icon::after {
+  top: 0.7rem;
+}
+
+.nav-checkbox:checked + .nav-label .nav-icon {
+  background-color: transparent;
+}
+
+.nav-checkbox:checked + .nav-label .nav-icon::before {
+  top: 0;
+  transform: rotate(135deg);
+}
+
+.nav-checkbox:checked + .nav-label .nav-icon::after {
+  top: 0;
+  transform: rotate(-135deg);
+}/*# sourceMappingURL=cccsoau.css.map */

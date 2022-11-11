@@ -1,0 +1,18 @@
+$color-blue: blue;
+$color-white: white;
+$color-red: red;
+$color-black: rgb(4, 1, 29);
+$color-blue-light: rgba(58, 6, 153, 0.8);
+$color-blue-dark: rgba(10, 3, 48, 0.8);
+$color-blue-medium: rgb(138, 43, 226);
+
+$margin-horizontal: 8rem;
+$margin-vertical: 6rem;
+
+@mixin clearfix {
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}

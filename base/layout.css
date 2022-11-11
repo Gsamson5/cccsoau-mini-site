@@ -1,0 +1,166 @@
+.header {
+  height: 95vh;
+  background-image: linear-gradient(to right bottom, rgba(58, 6, 153, 0.8), rgba(10, 3, 48, 0.8)), url("file:///C:/Users/SPECIFIC%20TOOLS/Documents/html/images/cccsoau.jpg");
+  background-position: top;
+  background-size: cover;
+  position: relative;
+  -webkit-clip-path: polygon(0 0, 98% 0, 100% 100%, 0 98%);
+          clip-path: polygon(0 0, 98% 0, 100% 100%, 0 98%);
+}
+.header_logo {
+  display: inline-block;
+  padding-left: 1rem;
+  padding-top: 1rem;
+}
+.header_logo-cccsoau {
+  height: 2.5rem;
+}
+.header_logo-oau {
+  height: 2.5rem;
+}
+.header_link {
+  list-style: square;
+  text-decoration: none;
+  display: flex;
+  background-color: white;
+}
+
+ul {
+  display: inline-block;
+  justify-content: space-around;
+  text-transform: uppercase;
+  color: rgb(138, 43, 226);
+  margin-top: 0.5rem;
+  font-weight: 600;
+}
+
+#form {
+  position: absolute;
+  margin-top: 1.5rem;
+  padding: 1rem;
+}
+
+#username {
+  margin-bottom: 1rem;
+  border: 0.2rem solid rgb(4, 1, 29);
+  padding: 0.3rem;
+}
+
+#password {
+  margin-bottom: 1rem;
+  border: 0.2rem solid rgb(4, 1, 29);
+  padding: 0.3rem;
+}
+
+.butt {
+  color: white;
+  border: 0.2rem solid rgb(4, 1, 29);
+  background-color: blue;
+  padding: 0.3rem;
+  margin-bottom: 1rem;
+}
+.butt:hover {
+  height: 4rem;
+  width: 6rem;
+  background-color: rgb(138, 43, 226);
+  color: red;
+  font-weight: 600;
+}
+.butt_acc {
+  color: blue;
+  border: 0.2rem solid white;
+}
+.butt-about {
+  background-color: rgba(10, 3, 48, 0.8);
+  color: white;
+  text-decoration: none;
+  border-bottom: 0.2rem solid rgb(138, 43, 226);
+  letter-spacing: 0.2rem;
+}
+
+.main {
+  text-align: center;
+}
+.main .main_1 {
+  position: absolute;
+  left: 40%;
+  top: 50%;
+  text-align: center;
+  text-transform: uppercase;
+}
+.main_minor-1 {
+  display: block;
+  letter-spacing: 2.8rem;
+  -webkit-animation-name: moveInLeft;
+          animation-name: moveInLeft;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+}
+.main_minor-2 {
+  display: block;
+  font-weight: 350;
+  letter-spacing: 0.8rem;
+  -webkit-animation-name: moveInRight;
+          animation-name: moveInRight;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+}
+
+.button {
+  display: block;
+  font-weight: 400;
+  letter-spacing: 0.8rem;
+  position: absolute;
+  left: 46%;
+  top: 70%;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  background-color: blue;
+  padding: 0.5rem;
+  border: 0.2rem solid white;
+  border-radius: 1rem;
+  text-decoration: none;
+  -webkit-animation-name: rotateAbout;
+          animation-name: rotateAbout;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+.button:hover {
+  font-weight: 500;
+  letter-spacing: 0.5rem;
+  color: white;
+  box-shadow: 0rem 0.5rem 1rem rgb(4, 1, 29);
+  background-color: blue;
+  padding: 0.5rem;
+  border: 0.7rem solid white;
+  border-radius: 1rem;
+  text-decoration: none;
+  width: 20rem;
+}
+
+.slogan {
+  font-weight: 100;
+  position: absolute;
+  left: 71%;
+  top: 93%;
+  text-align: center;
+  -webkit-animation-name: reAppear;
+          animation-name: reAppear;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-iteration-count: 5;
+          animation-iteration-count: 5;
+  -webkit-animation-direction: left;
+          animation-direction: left;
+}/*# sourceMappingURL=layout.css.map */
